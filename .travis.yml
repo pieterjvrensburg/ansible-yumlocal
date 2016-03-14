@@ -22,9 +22,10 @@ install:
   - cd ../../
   - mv pieterjvrensburg/yumlocal pieterjvrensburg.yumlocal
   - rm -rf pieterjvrensburg
+  - ls -la
 
   # Create ansible.cfg with correct roles_path
-  - printf '[defaults]\nroles_path=../' > ansible.cfg
+  - printf '[defaults]\nroles_path=.' > ansible.cfg
 
 script:
   # Basic role syntax check

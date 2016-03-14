@@ -1,4 +1,5 @@
 ---
 # defaults file for pieterjvrensburg.yumlocal/
+package_src: packages
 package_dest: /tmp/rpms
 package_list: {}
