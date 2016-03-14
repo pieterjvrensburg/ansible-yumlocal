@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  remote_user: root
+  become: yes
+  roles:
+    - role: pieterjvrensburg.yumlocal/
+      package_dest: /tmp/rpms
+      package_list:
+        - jdk-7u80-linux-x64.rpm
